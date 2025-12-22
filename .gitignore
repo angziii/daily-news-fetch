@@ -1,7 +1,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-DAILY_NEWS.md
 .env
 .vscode/
 .idea/

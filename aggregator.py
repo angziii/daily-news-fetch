@@ -112,10 +112,13 @@ def main():
     news_data = fetch_news()
     md_report = generate_markdown(news_data)
     
+    # 动态生成文件名，如 NEWS_251222.md
+    date_filename = f"NEWS_{datetime.datetime.now().strftime('%y%m%d')}.md"
+    
     # 保存为 Markdown 文件
-    with open("DAILY_NEWS.md", "w", encoding="utf-8") as f:
+    with open(date_filename, "w", encoding="utf-8") as f:
         f.write(md_report)
-    print("DAILY_NEWS.md has been generated.")
+    print(f"{date_filename} has been generated.")
 
     # 发送邮件
     send_email(md_report)

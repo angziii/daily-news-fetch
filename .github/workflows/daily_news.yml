@@ -35,6 +35,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add DAILY_NEWS.md
-          git commit -m "Update daily news report" || echo "No changes to commit"
+          git add NEWS_*.md
+          git commit -m "Archive daily news report" || echo "No changes to commit"
           git push
