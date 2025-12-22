@@ -90,16 +90,24 @@ def send_email(content):
     receiver_email = os.environ.get("RECEIVER_EMAIL")
     password = os.environ.get("SMTP_PASSWORD") # 授权码
 
+    print(f"Debug: SMTP_SERVER={smtp_server}, SMTP_PORT={smtp_port}")
+    print(f"Debug: SENDER_EMAIL={'Set' if sender_email else 'Not Set'}")
+    print(f"Debug: RECEIVER_EMAIL={'Set' if receiver_email else 'Not Set'}")
+    print(f"Debug: SMTP_PASSWORD={'Set' if password else 'Not Set'}")
+
     if not all([sender_email, receiver_email, password]):
         print("Email configuration missing. Skipping email sending.")
         return
 
     # 支持多个接收人，用逗号分隔
     receivers = [r.strip() for r in receiver_email.split(',')]
+    print(f"Debug: Total receivers: {len(receivers)}")
 
     try:
-        server = smtplib.SMTP_SSL(smtp_server, smtp_port)
+        print(f"Debug: Attempting to connect to {smtp_server}:{smtp_port}...")
+        server = smtplib.SMTP_SSL(smtp_server, smtp_port, timeout=30)
         server.login(sender_email, password)
+        print("Debug: Login successful.")
         
         for receiver in receivers:
             message = MIMEText(content, 'plain', 'utf-8')
