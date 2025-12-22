@@ -85,27 +85,23 @@ def generate_markdown(news_data):
 def send_email(content):
     # 从环境变量获取配置
     smtp_server = os.environ.get("SMTP_SERVER", "smtp.qq.com")
-    smtp_port = int(os.environ.get("SMTP_PORT", 465))
+    # 尝试切换到 587 端口以提高兼容性
+    smtp_port = int(os.environ.get("SMTP_PORT", 587))
     sender_email = os.environ.get("SENDER_EMAIL")
     receiver_email = os.environ.get("RECEIVER_EMAIL")
     password = os.environ.get("SMTP_PASSWORD") # 授权码
-
-    print(f"Debug: SMTP_SERVER={smtp_server}, SMTP_PORT={smtp_port}")
-    print(f"Debug: SENDER_EMAIL={'Set' if sender_email else 'Not Set'}")
-    print(f"Debug: RECEIVER_EMAIL={'Set' if receiver_email else 'Not Set'}")
-    print(f"Debug: SMTP_PASSWORD={'Set' if password else 'Not Set'}")
 
     if not all([sender_email, receiver_email, password]):
         print("Email configuration missing. Skipping email sending.")
         return
 
-    # 支持多个接收人，用逗号分隔
     receivers = [r.strip() for r in receiver_email.split(',')]
-    print(f"Debug: Total receivers: {len(receivers)}")
 
     try:
-        print(f"Debug: Attempting to connect to {smtp_server}:{smtp_port}...")
-        server = smtplib.SMTP_SSL(smtp_server, smtp_port, timeout=30)
+        print(f"Debug: Connecting to {smtp_server}:{smtp_port} via STARTTLS...")
+        # 使用 standard SMTP + STARTTLS，这在云环境下通常更稳定
+        server = smtplib.SMTP(smtp_server, smtp_port, timeout=30)
+        server.starttls() 
         server.login(sender_email, password)
         print("Debug: Login successful.")
         
@@ -121,6 +117,7 @@ def send_email(content):
         server.quit()
     except Exception as e:
         print(f"Failed to send email: {e}")
+        print("Tip: If using QQ Mail, ensure SMTP is enabled and use the 16-digit authorization code.")
 
 def main():
     news_data = fetch_news()
