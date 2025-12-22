@@ -83,31 +83,46 @@ def generate_markdown(news_data):
     return md_content
 
 def send_email(content):
-    # 从环境变量获取配置
-    smtp_server = os.environ.get("SMTP_SERVER", "smtp.qq.com")
-    # 尝试切换到 587 端口以提高兼容性
-    smtp_port = int(os.environ.get("SMTP_PORT", 587))
     sender_email = os.environ.get("SENDER_EMAIL")
     receiver_email = os.environ.get("RECEIVER_EMAIL")
-    password = os.environ.get("SMTP_PASSWORD") # 授权码
+    password = os.environ.get("SMTP_PASSWORD")
 
     if not all([sender_email, receiver_email, password]):
         print("Email configuration missing. Skipping email sending.")
         return
 
+    # 尝试自动识别服务器（如果是 Gmail 或 QQ）
+    default_server = "smtp.qq.com"
+    default_port = 465
+    
+    if sender_email.endswith("@gmail.com"):
+        default_server = "smtp.gmail.com"
+        default_port = 587
+    elif sender_email.endswith("@qq.com"):
+        default_server = "smtp.qq.com"
+        default_port = 465
+
+    smtp_server = os.environ.get("SMTP_SERVER") or default_server
+    smtp_port = int(os.environ.get("SMTP_PORT") or default_port)
+
     receivers = [r.strip() for r in receiver_email.split(',')]
 
     try:
-        print(f"Debug: Connecting to {smtp_server}:{smtp_port} via STARTTLS...")
-        # 使用 standard SMTP + STARTTLS，这在云环境下通常更稳定
-        server = smtplib.SMTP(smtp_server, smtp_port, timeout=30)
-        server.starttls() 
+        print(f"Debug: Connecting to {smtp_server}:{smtp_port}...")
+        
+        # 根据端口选择连接方式
+        if smtp_port == 465:
+            server = smtplib.SMTP_SSL(smtp_server, smtp_port, timeout=30)
+        else:
+            server = smtplib.SMTP(smtp_server, smtp_port, timeout=30)
+            server.starttls()
+            
         server.login(sender_email, password)
         print("Debug: Login successful.")
         
         for receiver in receivers:
             message = MIMEText(content, 'plain', 'utf-8')
-            message['From'] = sender_email
+            message['From'] = f"Daily News <{sender_email}>"
             message['To'] = receiver
             message['Subject'] = Header(f"每日新闻汇总 - {datetime.datetime.now().strftime('%Y-%m-%d')}", 'utf-8')
             
@@ -117,7 +132,7 @@ def send_email(content):
         server.quit()
     except Exception as e:
         print(f"Failed to send email: {e}")
-        print("Tip: If using QQ Mail, ensure SMTP is enabled and use the 16-digit authorization code.")
+        print("Tip: If using Gmail, use an 'App Password'. If using QQ, use 'Authorization Code'.")
 
 def main():
     news_data = fetch_news()

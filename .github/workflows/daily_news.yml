@@ -26,8 +26,8 @@ jobs:
 
       - name: Run aggregator
         env:
-          SMTP_SERVER: "smtp.qq.com" # 默认使用 QQ 邮箱，如果不同请在 Secret 中修改
-          SMTP_PORT: 465
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
