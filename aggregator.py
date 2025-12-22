@@ -1,8 +1,9 @@
 import feedparser
 import datetime
 import os
-import smtplib
 import re
+import markdown
+import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
 
@@ -107,6 +108,34 @@ def send_email(content):
 
     receivers = [r.strip() for r in receiver_email.split(',')]
 
+    # 将 Markdown 转换为带有样式的 HTML
+    html_body = markdown.markdown(content)
+    
+    # 极简美观的 CSS 样式
+    html_template = f"""
+    <html>
+    <head>
+        <style>
+            body {{ font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }}
+            h1 {{ color: #1a1a1a; border-bottom: 2px solid #EEE; padding-bottom: 10px; }}
+            h2 {{ color: #2c3e50; margin-top: 30px; border-left: 4px solid #3498db; padding-left: 10px; }}
+            h3 {{ color: #e67e22; margin-top: 20px; }}
+            a {{ color: #3498db; text-decoration: none; font-weight: bold; }}
+            blockquote {{ border-left: 4px solid #DDD; padding-left: 15px; color: #666; font-style: italic; margin: 10px 0; }}
+            li {{ margin-bottom: 10px; }}
+            .footer {{ margin-top: 40px; font-size: 12px; color: #999; text-align: center; border-top: 1px solid #EEE; padding-top: 20px; }}
+        </style>
+    </head>
+    <body>
+        {html_body}
+        <div class="footer">
+            <p>本邮件由 GitHub Actions 自动发送</p>
+            <p><a href="https://github.com/angziii/daily-news-fetch">查看 GitHub 仓库</a></p>
+        </div>
+    </body>
+    </html>
+    """
+
     try:
         print(f"Debug: Connecting to {smtp_server}:{smtp_port}...")
         
@@ -121,7 +150,7 @@ def send_email(content):
         print("Debug: Login successful.")
         
         for receiver in receivers:
-            message = MIMEText(content, 'plain', 'utf-8')
+            message = MIMEText(html_template, 'html', 'utf-8')
             message['From'] = f"Daily News <{sender_email}>"
             message['To'] = receiver
             message['Subject'] = Header(f"每日新闻汇总 - {datetime.datetime.now().strftime('%Y-%m-%d')}", 'utf-8')
