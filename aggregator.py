@@ -94,17 +94,23 @@ def send_email(content):
         print("Email configuration missing. Skipping email sending.")
         return
 
-    message = MIMEText(content, 'plain', 'utf-8')
-    message['From'] = sender_email
-    message['To'] = receiver_email
-    message['Subject'] = Header(f"每日新闻汇总 - {datetime.datetime.now().strftime('%Y-%m-%d')}", 'utf-8')
+    # 支持多个接收人，用逗号分隔
+    receivers = [r.strip() for r in receiver_email.split(',')]
 
     try:
         server = smtplib.SMTP_SSL(smtp_server, smtp_port)
         server.login(sender_email, password)
-        server.sendmail(sender_email, [receiver_email], message.as_string())
+        
+        for receiver in receivers:
+            message = MIMEText(content, 'plain', 'utf-8')
+            message['From'] = sender_email
+            message['To'] = receiver
+            message['Subject'] = Header(f"每日新闻汇总 - {datetime.datetime.now().strftime('%Y-%m-%d')}", 'utf-8')
+            
+            server.sendmail(sender_email, [receiver], message.as_string())
+            print(f"Email sent successfully to {receiver}!")
+            
         server.quit()
-        print("Email sent successfully!")
     except Exception as e:
         print(f"Failed to send email: {e}")
 
