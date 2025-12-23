@@ -1,0 +1,53 @@
+{
+  "FT中文网": [
+    "https://www.ftchinese.com/story/001108513",
+    "https://www.ftchinese.com/story/001108504",
+    "https://www.ftchinese.com/story/001108503",
+    "https://www.ftchinese.com/story/001108456",
+    "https://www.ftchinese.com/story/001108500",
+    "https://www.ftchinese.com/story/001108511"
+  ],
+  "BBC 中文": [
+    "https://www.bbc.com/zhongwen/articles/cvgr072z1e0o/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/cwyl01zeqgjo/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/cedxj9l2vqno/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/cp8zpyrvmm4o/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/cvgr0m9xdxko/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/c4g98533404o/trad?at_medium=RSS&at_campaign=rss"
+  ],
+  "联合早报": [
+    "https://www.zaobao.com/realtime/china/story20251223-8003220",
+    "https://www.zaobao.com/realtime/world/story20251126-7872848",
+    "https://www.zaobao.com/realtime/world/story20251205-7918642",
+    "https://www.zaobao.com/realtime/world/story20251214-7961721",
+    "https://www.zaobao.com/finance/china/story20251222-8001312",
+    "https://www.zaobao.com/news/china/story20251222-8001792"
+  ],
+  "Solidot": [
+    "https://www.solidot.org/story?sid=83119",
+    "https://www.solidot.org/story?sid=83120",
+    "https://www.solidot.org/story?sid=83121",
+    "https://www.solidot.org/story?sid=83122",
+    "https://www.solidot.org/story?sid=83123"
+  ],
+  "阮一峰的网络日志": [
+    "http://www.ruanyifeng.com/blog/2025/12/weekly-issue-376.html",
+    "http://www.ruanyifeng.com/blog/2025/12/weekly-issue-377.html",
+    "http://www.ruanyifeng.com/blog/2025/12/weekly-issue-378.html"
+  ],
+  "Hacker News": [
+    "https://z.ai/blog/glm-4.7",
+    "https://spectrum.ieee.org/ultrasound-cancer-treatment",
+    "https://www.404media.co/flock-exposed-its-ai-powered-cameras-to-the-internet-we-tracked-ourselves/",
+    "https://brooker.co.za/blog/2024/05/09/nagle.html",
+    "https://jalammar.github.io/illustrated-transformer/",
+    "https://github.com/karol-broda/snitch"
+  ],
+  "少数派 (Minority)": [
+    "https://sspai.com/post/104796",
+    "https://sspai.com/post/104704",
+    "https://sspai.com/post/86003",
+    "https://sspai.com/post/104824",
+    "https://sspai.com/post/104833"
+  ]
+}

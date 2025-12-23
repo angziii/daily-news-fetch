@@ -31,12 +31,13 @@ jobs:
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
           RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          TEST_EMAIL: ${{ secrets.TEST_EMAIL }}
         run: python aggregator.py
 
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add NEWS_*.md
-          git commit -m "Archive daily news report" || echo "No changes to commit"
+          git add NEWS_*.md history.json
+          git commit -m "Archive daily news and update history" || echo "No changes to commit"
           git push
