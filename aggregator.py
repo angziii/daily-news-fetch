@@ -7,6 +7,7 @@ import smtplib
 import json
 from email.mime.text import MIMEText
 from email.header import Header
+from email.utils import getaddresses
 
 # 配置新闻源
 NEWS_SOURCES = [
@@ -127,7 +128,7 @@ def generate_markdown(news_data):
             
     return md_content
 
-def get_personalized_subject():
+def get_personalized_subject(name=None):
     """Generate a personalized email subject based on time of day."""
     import random
     now = datetime.datetime.now()
@@ -184,11 +185,39 @@ def get_personalized_subject():
         ])
     ]
     
+    selected_options = []
     for start, end, options in subjects:
         if start <= hour < end:
-            return f"{random.choice(options)} ({date_str})"
+            selected_options = options
+            break
     
-    return f"今日新闻 ({date_str})"
+    if not selected_options:
+        subject = f"今日新闻 ({date_str})"
+    else:
+        subject = random.choice(selected_options)
+
+    # 插入称呼的逻辑
+    if name:
+        name = name.strip()
+        # 针对特定开头的问候语进行优化
+        if subject.startswith("早安"):
+            subject = subject.replace("早安", f"早安，{name}", 1)
+        elif subject.startswith("午安"):
+             subject = subject.replace("午安", f"午安，{name}", 1)
+        elif subject.startswith("下午好"):
+             subject = subject.replace("下午好", f"下午好，{name}", 1)
+        elif subject.startswith("晚安"):
+             subject = subject.replace("晚安", f"晚安，{name}", 1)
+        elif subject.startswith("夜深了"):
+             subject = subject.replace("夜深了", f"夜深了，{name}", 1)
+        elif subject.startswith("Morning"):
+             subject = subject.replace("Morning", f"Morning, {name}", 1)
+        elif subject.startswith("Good morning"):
+             subject = subject.replace("Good morning", f"Good morning, {name}", 1)
+        else:
+             subject = f"{name}，{subject}"
+    
+    return f"{subject} ({date_str})"
 
 def send_email(content):
     sender_email = os.environ.get("SENDER_EMAIL")
@@ -198,14 +227,17 @@ def send_email(content):
 
     # 调试模式：如果设置了 TEST_EMAIL，则只发给它
     is_debug = False
+    raw_receivers = os.environ.get("RECEIVER_EMAIL", "")
+    
     if test_email and test_email.strip():
         print(f"Debug Mode: Overriding receiver with TEST_EMAIL: {test_email}")
-        receivers = [test_email.strip()]
+        # getaddresses expects a list of address strings
+        receivers_list = getaddresses([test_email.strip()])
         is_debug = True
     else:
-        receivers = [r.strip() for r in receiver_email.split(',')] if receiver_email else []
+        receivers_list = getaddresses([raw_receivers])
 
-    if not all([sender_email, receivers, password]):
+    if not all([sender_email, receivers_list, password]):
         print("Required email configuration (sender, receiver, or password) is missing. Skipping email sending.")
         return
 
@@ -222,8 +254,6 @@ def send_email(content):
 
     smtp_server = os.environ.get("SMTP_SERVER") or default_server
     smtp_port = int(os.environ.get("SMTP_PORT") or default_port)
-
-    receivers = [r.strip() for r in receiver_email.split(',')]
 
     # 将 Markdown 转换为带有样式的 HTML
     html_body = markdown.markdown(content)
@@ -359,18 +389,20 @@ def send_email(content):
         server.login(sender_email, password)
         print("Debug: Login successful.")
         
-        for receiver in receivers:
+        for name, email_addr in receivers_list:
+            if not email_addr: continue
+            
             message = MIMEText(html_template, 'html', 'utf-8')
             message['From'] = f"Daily News <{sender_email}>"
-            message['To'] = receiver
+            message['To'] = f"{name} <{email_addr}>" if name else email_addr
             
-            subject = get_personalized_subject()
+            subject = get_personalized_subject(name if name else None)
             if is_debug:
                 subject = f"[DEBUG] {subject}"
             message['Subject'] = Header(subject, 'utf-8')
             
-            server.sendmail(sender_email, [receiver], message.as_string())
-            print(f"Email sent successfully to {receiver}!")
+            server.sendmail(sender_email, [email_addr], message.as_string())
+            print(f"Email sent successfully to {email_addr} (Name: {name if name else 'None'})!")
             
         server.quit()
     except Exception as e:
