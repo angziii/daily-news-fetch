@@ -114,7 +114,7 @@ def fetch_news(history):
 
 def generate_markdown(news_data):
     date_str = datetime.datetime.now().strftime("%Y-%m-%d")
-    md_content = f"# 每日新闻汇总 (增量更新) - {date_str}\n\n"
+    md_content = f""
     
     for category, sources in news_data.items():
         md_content += f"## {category}\n\n"
