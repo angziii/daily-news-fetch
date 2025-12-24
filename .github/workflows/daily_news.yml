@@ -2,8 +2,8 @@ name: Daily News Aggregator
 
 on:
   schedule:
-    # 每天北京时间 8:00 (UTC 0:00) 运行
-    - cron: '0 0 * * *'
+    # 每天北京时间 10:00 (UTC 2:00) 运行
+    - cron: '0 2 * * *'
   workflow_dispatch: # 也可以手动触发
 
 jobs:

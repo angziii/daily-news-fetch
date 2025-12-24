@@ -127,6 +127,69 @@ def generate_markdown(news_data):
             
     return md_content
 
+def get_personalized_subject():
+    """Generate a personalized email subject based on time of day."""
+    import random
+    now = datetime.datetime.now()
+    hour = now.hour
+    date_str = now.strftime('%m/%d')
+    
+    # 短促、有力、朴实的标题库（中英文混合）
+    subjects = [
+        # 早晨 (5:00 - 11:00)
+        (5, 11, [
+            "早安。今日份已送达。",
+            "醒了吗？有些事想告诉你。",
+            "早。世界醒了，你的简报也到了。",
+            "新的一天，新的消息。",
+            "Morning. Your briefing is ready.",
+            "Rise and read.",
+            "Good morning. Here's what matters.",
+        ]),
+        # 中午 (11:00 - 14:00)
+        (11, 14, [
+            "午安。这是你的午间简报。",
+            "忙里偷闲，看点消息。",
+            "世界还在转。这是最新动态。",
+            "Midday check-in. News inside.",
+            "Lunch break reads.",
+            "A quick update for you.",
+        ]),
+        # 下午 (14:00 - 18:00)
+        (14, 18, [
+            "下午好。有些事值得一看。",
+            "还有几小时。先看看世界。",
+            "忙碌时，别忘了世界。",
+            "Afternoon. Here's what happened.",
+            "Almost there. A quick read for you.",
+            "Your afternoon update.",
+        ]),
+        # 晚上 (18:00 - 23:00)
+        (18, 23, [
+            "晚安。今日汇总已送达。",
+            "一天结束了。这是今天的故事。",
+            "放松一下。看看今天发生了什么。",
+            "Good evening. Here's your recap.",
+            "Day's done. Catch up here.",
+            "Tonight's read is ready.",
+        ]),
+        # 深夜 (23:00 - 5:00)
+        (23, 5, [
+            "夜深了。给你留了些东西。",
+            "还没睡？这里有些消息。",
+            "深夜陪伴。今日简报。",
+            "Late night. Something to read.",
+            "Still up? Here's what happened today.",
+            "A quiet read for the night.",
+        ])
+    ]
+    
+    for start, end, options in subjects:
+        if start <= hour < end:
+            return f"{random.choice(options)} ({date_str})"
+    
+    return f"今日新闻 ({date_str})"
+
 def send_email(content):
     sender_email = os.environ.get("SENDER_EMAIL")
     receiver_email = os.environ.get("RECEIVER_EMAIL")
@@ -301,7 +364,7 @@ def send_email(content):
             message['From'] = f"Daily News <{sender_email}>"
             message['To'] = receiver
             
-            subject = f"新闻更新汇总 - {datetime.datetime.now().strftime('%Y-%m-%d')}"
+            subject = get_personalized_subject()
             if is_debug:
                 subject = f"[DEBUG] {subject}"
             message['Subject'] = Header(subject, 'utf-8')
