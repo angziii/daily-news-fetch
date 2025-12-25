@@ -129,9 +129,13 @@ def generate_markdown(news_data):
     return md_content
 
 def get_personalized_subject(name=None):
-    """Generate a personalized email subject based on time of day."""
+    """Generate a personalized email subject based on time of day (Beijing Time)."""
     import random
-    now = datetime.datetime.now()
+    from datetime import timezone, timedelta
+    
+    # 使用北京时间 (UTC+8)
+    beijing_tz = timezone(timedelta(hours=8))
+    now = datetime.datetime.now(beijing_tz)
     hour = now.hour
     date_str = now.strftime('%m/%d')
     
@@ -192,7 +196,7 @@ def get_personalized_subject(name=None):
             break
     
     if not selected_options:
-        subject = f"今日新闻 ({date_str})"
+        subject = "今日新闻"
     else:
         subject = random.choice(selected_options)
 
