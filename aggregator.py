@@ -8,6 +8,7 @@ import json
 from email.mime.text import MIMEText
 from email.header import Header
 from email.utils import getaddresses
+from holidays import get_today_holiday
 
 # 配置新闻源
 NEWS_SOURCES = [
@@ -138,6 +139,15 @@ def get_personalized_subject(name=None):
     now = datetime.datetime.now(beijing_tz)
     hour = now.hour
     date_str = now.strftime('%m/%d')
+    
+    # 检查是否是节日
+    holiday = get_today_holiday()
+    if holiday:
+        # 节日模式：直接使用节日问候语
+        if name:
+            return f"{name.strip()}，{holiday['greeting']}！ ({date_str})"
+        else:
+            return f"{holiday['greeting']}！ ({date_str})"
     
     # 短促、有力、朴实的标题库（中英文混合）
     subjects = [
@@ -364,6 +374,7 @@ def send_email(content):
         <div class="wrapper">
             <div class="container">
                 <div class="header">
+                    {get_today_holiday()['header_html'] if get_today_holiday() else ''}
                     <p style="font-size: 14px; color: #888; margin-bottom: 8px;">{datetime.datetime.now().strftime('%Y年%m月%d日')}</p>
                     <h1>Daily News Roundup</h1>
                 </div>
