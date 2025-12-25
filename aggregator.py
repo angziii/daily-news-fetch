@@ -138,16 +138,17 @@ def get_personalized_subject(name=None):
     beijing_tz = timezone(timedelta(hours=8))
     now = datetime.datetime.now(beijing_tz)
     hour = now.hour
-    date_str = now.strftime('%m/%d')
+    # date_str 不再用于标题，但保留变量以备后用
+    # date_str = now.strftime('%m/%d')
     
     # 检查是否是节日
     holiday = get_today_holiday()
     if holiday:
         # 节日模式：直接使用节日问候语
         if name:
-            return f"{name.strip()}，{holiday['greeting']}！ ({date_str})"
+            return f"{name.strip()}，{holiday['greeting']}！"
         else:
-            return f"{holiday['greeting']}！ ({date_str})"
+            return f"{holiday['greeting']}！"
     
     # 短促、有力、朴实的标题库（中英文混合）
     subjects = [
@@ -231,7 +232,7 @@ def get_personalized_subject(name=None):
         else:
              subject = f"{name}，{subject}"
     
-    return f"{subject} ({date_str})"
+    return subject
 
 def send_email(content):
     sender_email = os.environ.get("SENDER_EMAIL")
