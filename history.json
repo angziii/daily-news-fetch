@@ -1,5 +1,10 @@
 {
   "FT中文网": [
+    "https://www.ftchinese.com/story/001108528",
+    "https://www.ftchinese.com/story/001108525",
+    "https://www.ftchinese.com/story/001108537",
+    "https://www.ftchinese.com/story/001108507",
+    "https://www.ftchinese.com/story/001108538",
     "https://www.ftchinese.com/story/001108534",
     "https://www.ftchinese.com/story/001108533",
     "https://www.ftchinese.com/story/001108535",
@@ -15,6 +20,10 @@
     "https://www.ftchinese.com/story/001108524"
   ],
   "BBC 中文": [
+    "https://www.bbc.com/zhongwen/articles/c75v02l7p1yo/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/czdgz667n70o/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/cn81wg1jw66o/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/cy47zx35lx1o/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/c4g9ve081wzo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cjwy5vzz4ggo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/c75v0r7e7qro/trad?at_medium=RSS&at_campaign=rss",
@@ -26,6 +35,11 @@
     "https://www.bbc.com/zhongwen/articles/c5y9m71z41ko/trad?at_medium=RSS&at_campaign=rss"
   ],
   "联合早报": [
+    "https://www.zaobao.com/realtime/world/story20251225-8012752",
+    "https://www.zaobao.com/realtime/china/story20251225-8009625",
+    "https://www.zaobao.com/realtime/china/story20251226-8013665",
+    "https://www.zaobao.com/realtime/world/story20251226-8013573",
+    "https://www.zaobao.com/realtime/china/story20251225-8013020",
     "https://www.zaobao.com/realtime/world/story20251128-7886312",
     "https://www.zaobao.com/realtime/world/story20251207-7927148",
     "https://www.zaobao.com/realtime/world/story20251216-7970391",
@@ -38,6 +52,11 @@
     "https://www.zaobao.com/realtime/china/story20251224-8008369"
   ],
   "Solidot": [
+    "https://www.solidot.org/story?sid=83147",
+    "https://www.solidot.org/story?sid=83148",
+    "https://www.solidot.org/story?sid=83149",
+    "https://www.solidot.org/story?sid=83150",
+    "https://www.solidot.org/story?sid=83151",
     "https://www.solidot.org/story?sid=83138",
     "https://www.solidot.org/story?sid=83140",
     "https://www.solidot.org/story?sid=83141",
@@ -50,11 +69,17 @@
     "https://www.solidot.org/story?sid=83134"
   ],
   "阮一峰的网络日志": [
+    "http://www.ruanyifeng.com/blog/2025/12/weekly-issue-379.html",
     "http://www.ruanyifeng.com/blog/2025/12/weekly-issue-377.html",
     "http://www.ruanyifeng.com/blog/2025/12/weekly-issue-378.html",
     "http://www.ruanyifeng.com/blog/2025/12/minimax-m2.1.html"
   ],
   "Hacker News": [
+    "https://fahrplan.events.ccc.de/congress/2025/fahrplan/",
+    "https://calnewport.com/on-paperbacks-and-tiktok/",
+    "https://fidget-spinner.github.io/posts/no-longer-sorry.html",
+    "https://www.minimaxi.com/news/minimax-m21",
+    "https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/",
     "https://github.com/antonmedv/textarea",
     "https://github.com/hkjarral/Asterisk-AI-Voice-Agent",
     "https://www.youtube.com/watch?v=oYU2hAbx_Fc",
@@ -67,6 +92,10 @@
     "https://github.com/bellard/mquickjs/blob/main/README.md"
   ],
   "少数派 (Minority)": [
+    "https://sspai.com/post/104734",
+    "https://sspai.com/prime/story/microplastics-facts-protections",
+    "https://sspai.com/post/104895",
+    "https://sspai.com/post/104901",
     "https://sspai.com/post/104723",
     "https://sspai.com/post/104517",
     "https://sspai.com/post/85156",
