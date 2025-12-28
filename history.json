@@ -22,6 +22,7 @@
     "https://www.ftchinese.com/story/001108512"
   ],
   "BBC 中文": [
+    "https://www.bbc.com/zhongwen/articles/cp39kklqdvko/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cwypzvwqd5xo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cjdrmygzv3po/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cvg1d0d0z0zo/trad?at_medium=RSS&at_campaign=rss",
@@ -40,6 +41,11 @@
     "https://www.bbc.com/zhongwen/articles/c5y9m71z41ko/trad?at_medium=RSS&at_campaign=rss"
   ],
   "联合早报": [
+    "https://www.zaobao.com/realtime/world/story20251210-7941330",
+    "https://www.zaobao.com/realtime/world/story20251210-7941519",
+    "https://www.zaobao.com/realtime/world/story20251219-7987043",
+    "https://www.zaobao.com/finance/singapore/story20251228-8001882",
+    "https://www.zaobao.com/news/china/story20251228-8008525",
     "https://www.zaobao.com/news/china/story20251226-8016309",
     "https://www.zaobao.com/news/china/story20251226-8016509",
     "https://www.zaobao.com/news/china/story20251226-8017351",
@@ -54,14 +60,14 @@
     "https://www.zaobao.com/realtime/world/story20251207-7927148",
     "https://www.zaobao.com/realtime/world/story20251216-7970391",
     "https://www.zaobao.com/news/china/story20251224-8011299",
-    "https://www.zaobao.com/realtime/china/story20251225-8012351",
-    "https://www.zaobao.com/realtime/world/story20251215-7965018",
-    "https://www.zaobao.com/realtime/world/story20251215-7966205",
-    "https://www.zaobao.com/news/world/story20251223-8006775",
-    "https://www.zaobao.com/realtime/china/story20251224-8008218",
-    "https://www.zaobao.com/realtime/china/story20251224-8008369"
+    "https://www.zaobao.com/realtime/china/story20251225-8012351"
   ],
   "Solidot": [
+    "https://www.solidot.org/story?sid=83156",
+    "https://www.solidot.org/story?sid=83157",
+    "https://www.solidot.org/story?sid=83158",
+    "https://www.solidot.org/story?sid=83160",
+    "https://www.solidot.org/story?sid=83161",
     "https://www.solidot.org/story?sid=83147",
     "https://www.solidot.org/story?sid=83148",
     "https://www.solidot.org/story?sid=83149",
@@ -85,6 +91,11 @@
     "http://www.ruanyifeng.com/blog/2025/12/minimax-m2.1.html"
   ],
   "Hacker News": [
+    "https://floor796.com/",
+    "https://blog.rastrian.dev/post/why-reliability-demands-functional-programming-adts-safety-and-critical-infrastructure",
+    "https://ploum.net/2025-12-15-communication-entertainment.html",
+    "https://www.quantamagazine.org/how-dads-fitness-may-be-packaged-and-passed-down-in-sperm-rna-20251222/",
+    "https://www.htmhell.dev/adventcalendar/2025/27/",
     "https://nhmu.utah.edu/articles/experts-explore-new-mushroom-which-causes-fairytale-hallucinations",
     "https://type-ruby.github.io/",
     "https://graydon2.dreamwidth.org/193447.html",
@@ -99,14 +110,10 @@
     "https://github.com/hkjarral/Asterisk-AI-Voice-Agent",
     "https://www.youtube.com/watch?v=oYU2hAbx_Fc",
     "https://news.ycombinator.com/item?id=46380168",
-    "https://git.dec05eba.com/phoenix/about/",
-    "https://www.macrumors.com/2025/12/23/texas-app-store-law-blocked/",
-    "https://www.theguardian.com/us-news/2025/dec/23/epstein-unredacted-files-social-media",
-    "https://blog.ui.com/article/travel-in-style-unifi-style-unifi-travel-router",
-    "https://github.com/freelawproject/x-ray",
-    "https://github.com/bellard/mquickjs/blob/main/README.md"
+    "https://git.dec05eba.com/phoenix/about/"
   ],
   "少数派 (Minority)": [
+    "https://sspai.com/post/104832",
     "https://sspai.com/post/104737",
     "https://sspai.com/post/104890",
     "https://sspai.com/post/104915",
