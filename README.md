@@ -1,6 +1,6 @@
 # Daily News Aggregator 每日新闻推送 📰
 
-![Daily News Fetch Hero](./daily-news-fetch-hero.png)
+![Daily News Fetch Hero](./daily-news-black.webp)
 
 一个基于 GitHub Actions 的轻量级智能新闻聚合器。不再通过简单的定时全量推送，而是采用**智能增量更新**机制，确保你收到的每一条推送都是新鲜内容。
 
