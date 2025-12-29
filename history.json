@@ -1,5 +1,10 @@
 {
   "FT中文网": [
+    "https://www.ftchinese.com/story/001108552",
+    "https://www.ftchinese.com/story/001108551",
+    "https://www.ftchinese.com/story/001108553",
+    "https://www.ftchinese.com/story/001108554",
+    "https://www.ftchinese.com/story/001108555",
     "https://www.ftchinese.com/story/001108542",
     "https://www.ftchinese.com/story/001108539",
     "https://www.ftchinese.com/story/001108543",
@@ -14,14 +19,12 @@
     "https://www.ftchinese.com/story/001108533",
     "https://www.ftchinese.com/story/001108535",
     "https://www.ftchinese.com/story/001108530",
-    "https://www.ftchinese.com/story/001108529",
-    "https://www.ftchinese.com/story/001108505",
-    "https://www.ftchinese.com/story/001108531",
-    "https://www.ftchinese.com/story/001108532",
-    "https://www.ftchinese.com/story/001108515",
-    "https://www.ftchinese.com/story/001108512"
+    "https://www.ftchinese.com/story/001108529"
   ],
   "BBC 中文": [
+    "https://www.bbc.com/zhongwen/articles/cpvd989g302o/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/c79x2r0xrpqo/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/ckgd9eyr08ro/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cp39kklqdvko/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cwypzvwqd5xo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cjdrmygzv3po/trad?at_medium=RSS&at_campaign=rss",
@@ -41,6 +44,11 @@
     "https://www.bbc.com/zhongwen/articles/c5y9m71z41ko/trad?at_medium=RSS&at_campaign=rss"
   ],
   "联合早报": [
+    "https://www.zaobao.com/realtime/world/story20251202-7906493",
+    "https://www.zaobao.com/realtime/world/story20251211-7947483",
+    "https://www.zaobao.com/realtime/world/story20251211-7949029",
+    "https://www.zaobao.com/realtime/world/story20251220-7992638",
+    "https://www.zaobao.com/realtime/china/story20251229-8023554",
     "https://www.zaobao.com/realtime/world/story20251210-7941330",
     "https://www.zaobao.com/realtime/world/story20251210-7941519",
     "https://www.zaobao.com/realtime/world/story20251219-7987043",
@@ -55,14 +63,12 @@
     "https://www.zaobao.com/realtime/china/story20251225-8009625",
     "https://www.zaobao.com/realtime/china/story20251226-8013665",
     "https://www.zaobao.com/realtime/world/story20251226-8013573",
-    "https://www.zaobao.com/realtime/china/story20251225-8013020",
-    "https://www.zaobao.com/realtime/world/story20251128-7886312",
-    "https://www.zaobao.com/realtime/world/story20251207-7927148",
-    "https://www.zaobao.com/realtime/world/story20251216-7970391",
-    "https://www.zaobao.com/news/china/story20251224-8011299",
-    "https://www.zaobao.com/realtime/china/story20251225-8012351"
+    "https://www.zaobao.com/realtime/china/story20251225-8013020"
   ],
   "Solidot": [
+    "https://www.solidot.org/story?sid=83162",
+    "https://www.solidot.org/story?sid=83163",
+    "https://www.solidot.org/story?sid=83164",
     "https://www.solidot.org/story?sid=83156",
     "https://www.solidot.org/story?sid=83157",
     "https://www.solidot.org/story?sid=83158",
@@ -79,10 +85,7 @@
     "https://www.solidot.org/story?sid=83142",
     "https://www.solidot.org/story?sid=83143",
     "https://www.solidot.org/story?sid=83130",
-    "https://www.solidot.org/story?sid=83131",
-    "https://www.solidot.org/story?sid=83132",
-    "https://www.solidot.org/story?sid=83133",
-    "https://www.solidot.org/story?sid=83134"
+    "https://www.solidot.org/story?sid=83131"
   ],
   "阮一峰的网络日志": [
     "http://www.ruanyifeng.com/blog/2025/12/weekly-issue-379.html",
@@ -91,6 +94,11 @@
     "http://www.ruanyifeng.com/blog/2025/12/minimax-m2.1.html"
   ],
   "Hacker News": [
+    "https://lib.rs/crates/spherical-cow",
+    "https://ny1.com/nyc/all-boroughs/news/2025/11/09/water--dep--tunnels-",
+    "https://marekfiser.com/blog/mono-vs-dot-net-in-unity/",
+    "https://maurycyz.com/misc/make-up-tags/",
+    "https://maurycyz.com/misc/raw_photo/",
     "https://floor796.com/",
     "https://blog.rastrian.dev/post/why-reliability-demands-functional-programming-adts-safety-and-critical-infrastructure",
     "https://ploum.net/2025-12-15-communication-entertainment.html",
@@ -105,14 +113,11 @@
     "https://calnewport.com/on-paperbacks-and-tiktok/",
     "https://fidget-spinner.github.io/posts/no-longer-sorry.html",
     "https://www.minimaxi.com/news/minimax-m21",
-    "https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/",
-    "https://github.com/antonmedv/textarea",
-    "https://github.com/hkjarral/Asterisk-AI-Voice-Agent",
-    "https://www.youtube.com/watch?v=oYU2hAbx_Fc",
-    "https://news.ycombinator.com/item?id=46380168",
-    "https://git.dec05eba.com/phoenix/about/"
+    "https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/"
   ],
   "少数派 (Minority)": [
+    "https://sspai.com/post/104232",
+    "https://sspai.com/post/104969",
     "https://sspai.com/post/104832",
     "https://sspai.com/post/104737",
     "https://sspai.com/post/104890",
