@@ -1,5 +1,10 @@
 {
   "FT中文网": [
+    "https://www.ftchinese.com/story/001108631",
+    "https://www.ftchinese.com/story/001108632",
+    "https://www.ftchinese.com/story/001108633",
+    "https://www.ftchinese.com/story/001108634",
+    "https://www.ftchinese.com/story/001108624",
     "https://www.ftchinese.com/story/001108608",
     "https://www.ftchinese.com/story/001108606",
     "https://www.ftchinese.com/story/001108613",
@@ -14,14 +19,11 @@
     "https://www.ftchinese.com/story/001108592",
     "https://www.ftchinese.com/story/001108593",
     "https://www.ftchinese.com/story/001108594",
-    "https://www.ftchinese.com/story/001108595",
-    "https://www.ftchinese.com/story/001108585",
-    "https://www.ftchinese.com/story/001108586",
-    "https://www.ftchinese.com/story/001108587",
-    "https://www.ftchinese.com/story/001108588",
-    "https://www.ftchinese.com/story/001108589"
+    "https://www.ftchinese.com/story/001108595"
   ],
   "BBC 中文": [
+    "https://www.bbc.com/zhongwen/articles/c3r1q0p2078o/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/cp342lq7lnyo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cn0y8jp8y5po/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/ce3ewgzj0qpo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/c1wzq1q88r1o/trad?at_medium=RSS&at_campaign=rss",
@@ -39,11 +41,14 @@
     "https://www.bbc.com/zhongwen/articles/cy4qykzl4lpo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cvg13r0j7r3o/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/ce8rv6y17dko/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/c79rnnz2ne2o/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/cvgrgymzxz2o/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/cjrzdw81559o/trad?at_medium=RSS&at_campaign=rss"
+    "https://www.bbc.com/zhongwen/articles/c79rnnz2ne2o/trad?at_medium=RSS&at_campaign=rss"
   ],
   "联合早报": [
+    "https://www.zaobao.com/realtime/world/story20251219-7987043",
+    "https://www.zaobao.com/realtime/world/story20251220-7992638",
+    "https://www.zaobao.com/realtime/world/story20260107-8062782",
+    "https://www.zaobao.com/news/china/story20260106-8060839",
+    "https://www.zaobao.com/realtime/china/story20260107-8062979",
     "https://www.zaobao.com/realtime/china/story20260105-8052206",
     "https://www.zaobao.com/realtime/world/story20260105-8052544",
     "https://www.zaobao.com/realtime/china/story20260105-8053580",
@@ -58,14 +63,14 @@
     "https://www.zaobao.com/news/world/story20260104-8048289",
     "https://www.zaobao.com/realtime/china/story20260104-8048754",
     "https://www.zaobao.com/realtime/world/story20251207-7927148",
-    "https://www.zaobao.com/realtime/world/story20251216-7970391",
-    "https://www.zaobao.com/finance/china/story20260102-8044089",
-    "https://www.zaobao.com/news/world/story20260102-8044868",
-    "https://www.zaobao.com/realtime/world/story20260103-8045859",
-    "https://www.zaobao.com/realtime/world/story20251206-7924022",
-    "https://www.zaobao.com/realtime/world/story20251215-7965018"
+    "https://www.zaobao.com/realtime/world/story20251216-7970391"
   ],
   "Solidot": [
+    "https://www.solidot.org/story?sid=83234",
+    "https://www.solidot.org/story?sid=83235",
+    "https://www.solidot.org/story?sid=83236",
+    "https://www.solidot.org/story?sid=83237",
+    "https://www.solidot.org/story?sid=83238",
     "https://www.solidot.org/story?sid=83224",
     "https://www.solidot.org/story?sid=83225",
     "https://www.solidot.org/story?sid=83226",
@@ -80,12 +85,7 @@
     "https://www.solidot.org/story?sid=83204",
     "https://www.solidot.org/story?sid=83205",
     "https://www.solidot.org/story?sid=83206",
-    "https://www.solidot.org/story?sid=83198",
-    "https://www.solidot.org/story?sid=83199",
-    "https://www.solidot.org/story?sid=83200",
-    "https://www.solidot.org/story?sid=83201",
-    "https://www.solidot.org/story?sid=83202",
-    "https://www.solidot.org/story?sid=83193"
+    "https://www.solidot.org/story?sid=83198"
   ],
   "阮一峰的网络日志": [
     "http://www.ruanyifeng.com/blog/2025/12/weekly-issue-379.html",
@@ -94,6 +94,11 @@
     "http://www.ruanyifeng.com/blog/2025/12/minimax-m2.1.html"
   ],
   "Hacker News": [
+    "https://blog.booleanbiotech.com/oral-microbiome-biogaia",
+    "https://byteshape.com/blogs/Qwen3-30B-A3B-Instruct-2507/",
+    "https://github.com/rberg27/doom-coding",
+    "https://kevinalbs.com/spherical_snake/",
+    "https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/",
     "https://strange.website/",
     "https://www.koreaherald.com/article/10648326",
     "https://andrew.grahamyooll.com/blog/Try-to-Take-My-Position/",
@@ -108,14 +113,13 @@
     "https://refactoringenglish.com/blog/2025-hn-top-5/",
     "https://github.com/obround/mytorch",
     "https://nik.art/the-suck-is-why-were-here/",
-    "https://data.stackexchange.com/stackoverflow/query/1926661#graph",
-    "https://lotteryeverysecond.lffl.me/",
-    "https://www.madebywindmill.com/tempi/blog/hbfs-bpm/",
-    "https://xeiaso.net/notes/2026/year-linux-desktop/",
-    "https://nullprogram.com/blog/2015/03/19/",
-    "https://indieweb.org/POSSE"
+    "https://data.stackexchange.com/stackoverflow/query/1926661#graph"
   ],
   "少数派 (Minority)": [
+    "https://sspai.com/post/105047",
+    "https://sspai.com/post/105165",
+    "https://sspai.com/post/105197",
+    "https://sspai.com/post/105214",
     "https://sspai.com/post/104808",
     "https://sspai.com/post/105070",
     "https://sspai.com/post/105120",
@@ -131,10 +135,6 @@
     "https://sspai.com/post/64519",
     "https://sspai.com/post/104802",
     "https://sspai.com/post/104978",
-    "https://sspai.com/prime/story/times-new-american",
-    "https://sspai.com/post/105004",
-    "https://sspai.com/post/105044",
-    "https://sspai.com/post/104783",
-    "https://sspai.com/post/104984"
+    "https://sspai.com/prime/story/times-new-american"
   ]
 }
