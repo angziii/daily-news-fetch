@@ -22,6 +22,8 @@
     "https://www.ftchinese.com/story/001108624"
   ],
   "BBC 中文": [
+    "https://www.bbc.com/zhongwen/articles/cevnxpx73elo/trad?at_medium=RSS&at_campaign=rss",
+    "https://www.bbc.com/zhongwen/articles/c78ved27gvlo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cx2kgkldvldo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cg4ekgv3wdgo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cg7y053kkyko/trad?at_medium=RSS&at_campaign=rss",
@@ -39,11 +41,14 @@
     "https://www.bbc.com/zhongwen/articles/cwy189vq3nlo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/c3r1q0p2078o/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cp342lq7lnyo/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/cn0y8jp8y5po/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/ce3ewgzj0qpo/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/c1wzq1q88r1o/trad?at_medium=RSS&at_campaign=rss"
+    "https://www.bbc.com/zhongwen/articles/cn0y8jp8y5po/trad?at_medium=RSS&at_campaign=rss"
   ],
   "联合早报": [
+    "https://www.zaobao.com/news/china/story20260110-8081685",
+    "https://www.zaobao.com/news/world/story20260111-8070854",
+    "https://www.zaobao.com/realtime/china/story20260111-8082626",
+    "https://www.zaobao.com/news/china/story20260110-8082074",
+    "https://www.zaobao.com/news/world/story20260110-8081657",
     "https://www.zaobao.com/realtime/world/story20251223-8003395",
     "https://www.zaobao.com/realtime/world/story20251223-8007715",
     "https://www.zaobao.com/realtime/world/story20260101-8039043",
@@ -58,14 +63,14 @@
     "https://www.zaobao.com/realtime/world/story20251212-7953731",
     "https://www.zaobao.com/realtime/world/story20251230-8028296",
     "https://www.zaobao.com/realtime/china/story20260108-8068565",
-    "https://www.zaobao.com/realtime/world/story20260108-8068671",
-    "https://www.zaobao.com/realtime/world/story20251219-7987043",
-    "https://www.zaobao.com/realtime/world/story20251220-7992638",
-    "https://www.zaobao.com/realtime/world/story20260107-8062782",
-    "https://www.zaobao.com/news/china/story20260106-8060839",
-    "https://www.zaobao.com/realtime/china/story20260107-8062979"
+    "https://www.zaobao.com/realtime/world/story20260108-8068671"
   ],
   "Solidot": [
+    "https://www.solidot.org/story?sid=83267",
+    "https://www.solidot.org/story?sid=83268",
+    "https://www.solidot.org/story?sid=83269",
+    "https://www.solidot.org/story?sid=83270",
+    "https://www.solidot.org/story?sid=83271",
     "https://www.solidot.org/story?sid=83258",
     "https://www.solidot.org/story?sid=83259",
     "https://www.solidot.org/story?sid=83260",
@@ -80,12 +85,7 @@
     "https://www.solidot.org/story?sid=83246",
     "https://www.solidot.org/story?sid=83247",
     "https://www.solidot.org/story?sid=83248",
-    "https://www.solidot.org/story?sid=83249",
-    "https://www.solidot.org/story?sid=83234",
-    "https://www.solidot.org/story?sid=83235",
-    "https://www.solidot.org/story?sid=83236",
-    "https://www.solidot.org/story?sid=83237",
-    "https://www.solidot.org/story?sid=83238"
+    "https://www.solidot.org/story?sid=83249"
   ],
   "阮一峰的网络日志": [
     "http://www.ruanyifeng.com/blog/2026/01/weekly-issue-380.html",
@@ -95,6 +95,11 @@
     "http://www.ruanyifeng.com/blog/2025/12/minimax-m2.1.html"
   ],
   "Hacker News": [
+    "https://www.openchaos.dev/",
+    "https://news.ycombinator.com/item?id=46571149",
+    "https://trails.pieterma.es/",
+    "https://mitchellh.com/writing/ghostty-memory-leak-fix",
+    "https://github.com/OlaProeis/Ferrite",
     "https://www.donutthejedi.com/",
     "https://scottjg.com/posts/2026-01-08-crappy-computer-showdown/",
     "https://nexanet.ai/blog/53-times-flocksafety-hardcoded-the-password-for-americas-surveillance-infrastructure",
@@ -109,14 +114,10 @@
     "https://realfood.gov",
     "https://tailscale.com/changelog",
     "https://www.ucsf.edu/news/2016/09/404081/sugar-papers-reveal-industry-role-shifting-national-heart-disease-focus",
-    "https://pebblebed.com/blog/kernel-bugs",
-    "https://blog.booleanbiotech.com/oral-microbiome-biogaia",
-    "https://byteshape.com/blogs/Qwen3-30B-A3B-Instruct-2507/",
-    "https://github.com/rberg27/doom-coding",
-    "https://kevinalbs.com/spherical_snake/",
-    "https://jasoneckert.github.io/myblog/how-microsoft-killed-my-snapdragon-devkit/"
+    "https://pebblebed.com/blog/kernel-bugs"
   ],
   "少数派 (Minority)": [
+    "https://sspai.com/post/105308",
     "https://sspai.com/post/104638",
     "https://sspai.com/post/105188",
     "https://sspai.com/prime/story/helicobacter-pylori-explained",
@@ -135,7 +136,6 @@
     "https://sspai.com/post/105197",
     "https://sspai.com/post/105214",
     "https://sspai.com/post/104808",
-    "https://sspai.com/post/105070",
-    "https://sspai.com/post/105120"
+    "https://sspai.com/post/105070"
   ]
 }
