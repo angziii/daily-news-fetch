@@ -22,6 +22,7 @@
     "https://www.ftchinese.com/story/001108699"
   ],
   "BBC 中文": [
+    "https://www.bbc.com/zhongwen/articles/c93102r3lv4o/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/c4gwzj0vxeyo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/ce9y3n9pzrzo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/c2e1n4kxyw9o/trad?at_medium=RSS&at_campaign=rss",
@@ -40,10 +41,14 @@
     "https://www.bbc.com/zhongwen/articles/clyw3dyv18do/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cn7jzzzn1d5o/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/c3ed558gvdyo/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/c7v07n01l9go/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/cwywj99enzko/trad?at_medium=RSS&at_campaign=rss"
+    "https://www.bbc.com/zhongwen/articles/c7v07n01l9go/trad?at_medium=RSS&at_campaign=rss"
   ],
   "联合早报": [
+    "https://www.zaobao.com/realtime/world/story20251213-7959545",
+    "https://www.zaobao.com/realtime/world/story20260109-8074348",
+    "https://www.zaobao.com/realtime/world/story20260109-8074392",
+    "https://www.zaobao.com/news/china/story20260117-8116062",
+    "https://www.zaobao.com/realtime/china/story20260118-8117813",
     "https://www.zaobao.com/realtime/world/story20260108-8068671",
     "https://www.zaobao.com/realtime/world/story20260108-8073518",
     "https://www.zaobao.com/news/china/story20260116-8113667",
@@ -58,12 +63,7 @@
     "https://www.zaobao.com/news/sea/story20260114-8096426",
     "https://www.zaobao.com/news/world/story20260114-8101731",
     "https://www.zaobao.com/realtime/world/story20260115-8103325",
-    "https://www.zaobao.com/realtime/world/story20260115-8103401",
-    "https://www.zaobao.com/realtime/world/story20260105-8051889",
-    "https://www.zaobao.com/realtime/world/story20260105-8052544",
-    "https://www.zaobao.com/realtime/china/story20260114-8097372",
-    "https://www.zaobao.com/realtime/world/story20260114-8097248",
-    "https://www.zaobao.com/realtime/world/story20260114-8097336"
+    "https://www.zaobao.com/realtime/world/story20260115-8103401"
   ],
   "Solidot": [
     "https://www.solidot.org/story?sid=83323",
@@ -96,6 +96,11 @@
     "http://www.ruanyifeng.com/blog/2025/12/minimax-m2.1.html"
   ],
   "Hacker News": [
+    "https://www.caimito.net/en/blog/2025/12/07/the-recurring-dream-of-replacing-developers.html",
+    "https://xous.dev/",
+    "https://github.com/kip-dili/kip",
+    "https://css.csail.mit.edu/6.858/2024/",
+    "https://alexharri.com/blog/ascii-rendering",
     "https://letsencrypt.org/2026/01/15/6day-and-ip-general-availability",
     "https://nanonets.com/cookbooks/structured-llm-outputs",
     "https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence",
@@ -110,14 +115,10 @@
     "https://patrickmccanna.net/a-better-way-to-limit-claude-code-and-other-coding-agents-access-to-secrets/",
     "https://cursor.com/blog/scaling-agents",
     "https://furiosa.ai/blog/introducing-rngd-server-efficient-ai-inference-at-data-center-scale",
-    "https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files",
-    "https://blog.vllm.ai/2025/12/17/large-scale-serving.html",
-    "https://caidan.dev/portfolio/ascii_clouds/",
-    "https://www.greptile.com/blog/github-ids",
-    "https://questdb.com/blog/jvm-current-thread-user-time/",
-    "https://blog.jgc.org/2026/01/theres-ridiculous-amount-of-tech-in.html"
+    "https://www.promptarmor.com/resources/claude-cowork-exfiltrates-files"
   ],
   "少数派 (Minority)": [
+    "https://sspai.com/post/105413",
     "https://sspai.com/post/104549",
     "https://sspai.com/post/105008",
     "https://sspai.com/post/105504",
@@ -136,7 +137,6 @@
     "https://sspai.com/post/104522",
     "https://sspai.com/post/105267",
     "https://sspai.com/post/105387",
-    "https://sspai.com/post/105403",
-    "https://sspai.com/post/105364"
+    "https://sspai.com/post/105403"
   ]
 }
