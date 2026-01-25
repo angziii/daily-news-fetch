@@ -22,6 +22,7 @@
     "https://www.ftchinese.com/story/001108748"
   ],
   "BBC 中文": [
+    "https://www.bbc.com/zhongwen/articles/cx2k4pxdyyzo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/czx332r15zno/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cgk886r5l4po/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/c1m77y4p239o/trad?at_medium=RSS&at_campaign=rss",
@@ -40,10 +41,14 @@
     "https://www.bbc.com/zhongwen/articles/cwy1pwwdyewo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cm2yervlgpno/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/c3r14z2303wo/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/cd0y4v9rx83o/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/c62ne3y1nx9o/trad?at_medium=RSS&at_campaign=rss"
+    "https://www.bbc.com/zhongwen/articles/cd0y4v9rx83o/trad?at_medium=RSS&at_campaign=rss"
   ],
   "联合早报": [
+    "https://www.zaobao.com/realtime/world/story20260107-8062782",
+    "https://www.zaobao.com/realtime/world/story20260107-8068097",
+    "https://www.zaobao.com/realtime/world/story20260107-8068114",
+    "https://www.zaobao.com/realtime/world/story20260116-8108936",
+    "https://www.zaobao.com/news/china/story20260125-8162012",
     "https://www.zaobao.com/realtime/world/story20260115-8108369",
     "https://www.zaobao.com/realtime/world/story20260115-8108382",
     "https://www.zaobao.com/news/sea/story20260123-8150973",
@@ -58,14 +63,14 @@
     "https://www.zaobao.com/realtime/world/story20260113-8095728",
     "https://www.zaobao.com/realtime/world/story20260113-8096398",
     "https://www.zaobao.com/realtime/world/story20260113-8096895",
-    "https://www.zaobao.com/news/china/story20260122-8138146",
-    "https://www.zaobao.com/realtime/world/story20260103-8048298",
-    "https://www.zaobao.com/realtime/world/story20260103-8048393",
-    "https://www.zaobao.com/news/china/story20260120-8130938",
-    "https://www.zaobao.com/news/world/story20260120-8130627",
-    "https://www.zaobao.com/news/world/story20260121-8131897"
+    "https://www.zaobao.com/news/china/story20260122-8138146"
   ],
   "Solidot": [
+    "https://www.solidot.org/story?sid=83384",
+    "https://www.solidot.org/story?sid=83385",
+    "https://www.solidot.org/story?sid=83386",
+    "https://www.solidot.org/story?sid=83387",
+    "https://www.solidot.org/story?sid=83388",
     "https://www.solidot.org/story?sid=83377",
     "https://www.solidot.org/story?sid=83378",
     "https://www.solidot.org/story?sid=83379",
@@ -80,12 +85,7 @@
     "https://www.solidot.org/story?sid=83359",
     "https://www.solidot.org/story?sid=83360",
     "https://www.solidot.org/story?sid=83361",
-    "https://www.solidot.org/story?sid=83362",
-    "https://www.solidot.org/story?sid=83352",
-    "https://www.solidot.org/story?sid=83353",
-    "https://www.solidot.org/story?sid=83354",
-    "https://www.solidot.org/story?sid=83355",
-    "https://www.solidot.org/story?sid=83356"
+    "https://www.solidot.org/story?sid=83362"
   ],
   "阮一峰的网络日志": [
     "http://www.ruanyifeng.com/blog/2026/01/ai-native-workspace.html",
@@ -98,6 +98,11 @@
     "http://www.ruanyifeng.com/blog/2025/12/minimax-m2.1.html"
   ],
   "Hacker News": [
+    "https://essenceia.github.io/projects/two_weeks_until_tapeout/",
+    "https://albedo.com/post/clarity-1-what-worked-and-where-we-go-next",
+    "https://eclypsium.com/blog/xray-counterfeit-usb-cable/",
+    "https://www.birdy.chat/blog/first-to-interoperate-with-whatsapp",
+    "https://keck.usc.edu/news/adoption-of-electric-vehicles-tied-to-real-world-reductions-in-air-pollution-study-finds/",
     "https://www.unix.dog/~yosh/blog/c-habits-for-me.html",
     "https://www.tbray.org/ongoing/When/202x/2026/01/14/Unicode-Properties",
     "https://www.ycombinator.com/",
@@ -112,14 +117,10 @@
     "https://www.jamf.com/blog/threat-actors-expand-abuse-of-visual-studio-code/",
     "https://arxiv.org/abs/2201.01174",
     "https://github.com/freedomofpress/dangerzone",
-    "https://blog.citp.princeton.edu/2026/01/16/internet-voting-is-insecure-and-should-not-be-used-in-public-elections/",
-    "https://novalauncher.com/nova-is-here-to-stay",
-    "https://github.com/davidbeesley/claude-chill",
-    "https://www.latimes.com/california/story/2026-01-09/california-has-no-areas-of-dryness-first-time-in-25-years",
-    "https://futhark-lang.org/blog/2026-01-16-are-arrays-functions.html",
-    "https://longnow.org/ideas/the-26000-year-astronomical-monument-hidden-in-plain-sight/"
+    "https://blog.citp.princeton.edu/2026/01/16/internet-voting-is-insecure-and-should-not-be-used-in-public-elections/"
   ],
   "少数派 (Minority)": [
+    "https://sspai.com/post/105679",
     "https://sspai.com/post/105578",
     "https://sspai.com/post/105475",
     "https://sspai.com/post/105709",
@@ -138,7 +139,6 @@
     "https://sspai.com/post/105628",
     "https://sspai.com/post/105227",
     "https://sspai.com/post/101074",
-    "https://sspai.com/post/105585",
-    "https://sspai.com/post/105600"
+    "https://sspai.com/post/105585"
   ]
 }
