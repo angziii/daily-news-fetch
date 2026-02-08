@@ -22,6 +22,7 @@
     "https://www.ftchinese.com/story/001108898"
   ],
   "BBC 中文": [
+    "https://www.bbc.com/zhongwen/articles/cx2lx71ylplo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cwy188p66d7o/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cx2y89q92dqo/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cj4l0ql04jko/trad?at_medium=RSS&at_campaign=rss",
@@ -40,10 +41,14 @@
     "https://www.bbc.com/zhongwen/articles/c20z9x5e27no/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/c1wzx50ygp1o/trad?at_medium=RSS&at_campaign=rss",
     "https://www.bbc.com/zhongwen/articles/cly906715p7o/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/cy09ze82gjzo/trad?at_medium=RSS&at_campaign=rss",
-    "https://www.bbc.com/zhongwen/articles/cn0y72184yko/trad?at_medium=RSS&at_campaign=rss"
+    "https://www.bbc.com/zhongwen/articles/cy09ze82gjzo/trad?at_medium=RSS&at_campaign=rss"
   ],
   "联合早报": [
+    "https://www.zaobao.com/realtime/world/story20260103-8048084",
+    "https://www.zaobao.com/realtime/world/story20260103-8048229",
+    "https://www.zaobao.com/realtime/world/story20260103-8048284",
+    "https://www.zaobao.com/realtime/world/story20260103-8048298",
+    "https://www.zaobao.com/realtime/world/story20260103-8048393",
     "https://www.zaobao.com/realtime/world/story20260102-8041332",
     "https://www.zaobao.com/realtime/world/story20260111-8083120",
     "https://www.zaobao.com/realtime/world/story20260111-8085183",
@@ -58,12 +63,7 @@
     "https://www.zaobao.com/realtime/world/story20260118-8119261",
     "https://www.zaobao.com/news/china/story20260204-8310295",
     "https://www.zaobao.com/news/china/story20260205-8312553",
-    "https://www.zaobao.com/news/china/story20260205-8312747",
-    "https://www.zaobao.com/realtime/world/story20251230-8028296",
-    "https://www.zaobao.com/realtime/world/story20260107-8067895",
-    "https://www.zaobao.com/realtime/world/story20260108-8068671",
-    "https://www.zaobao.com/realtime/world/story20260108-8073518",
-    "https://www.zaobao.com/news/china/story20260204-8295357"
+    "https://www.zaobao.com/news/china/story20260205-8312747"
   ],
   "Solidot": [
     "https://www.solidot.org/story?sid=83494",
@@ -101,6 +101,11 @@
     "http://www.ruanyifeng.com/blog/2025/12/minimax-m2.1.html"
   ],
   "Hacker News": [
+    "https://factory.strongdm.ai/",
+    "https://code.claude.com/docs/en/fast-mode",
+    "https://haskellforall.com/2026/02/beyond-agentic-coding",
+    "https://xorvoid.com/sectorc.html",
+    "https://github.com/localgpt-app/localgpt",
     "https://github.com/pydantic/monty",
     "https://floedb.ai/blog/how-we-made-geo-joins-400-faster-with-h3-indexes",
     "https://github.com/valdanylchuk/breezydemo",
@@ -115,12 +120,7 @@
     "https://sqldef.github.io/",
     "https://www.jakequist.com/thoughts/openclaw-is-what-apple-intelligence-should-have-been",
     "https://mistral.ai/news/voxtral-transcribe-2",
-    "https://www.economist.com/science-and-technology/2026/01/14/why-child-prodigies-rarely-become-elite-performers",
-    "https://deno.com/blog/introducing-deno-sandbox",
-    "https://www.thedrive.com/news/youll-have-that-on-those-big-jobs-the-worlds-largest-zip-tie-is-nearly-4-feet-long-and-75",
-    "https://github.com/puemos/craftplan",
-    "https://civai.org/blog/space-data-centers",
-    "https://www.simonberens.com/p/lessons-learned-shipping-500-units"
+    "https://www.economist.com/science-and-technology/2026/01/14/why-child-prodigies-rarely-become-elite-performers"
   ],
   "少数派 (Minority)": [
     "https://sspai.com/post/106081",
