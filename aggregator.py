@@ -26,6 +26,7 @@ NEWS_SOURCES = [
 
 LIMIT_PER_SOURCE = 5
 HISTORY_FILE = "history.json"
+ARCHIVE_DIR = "archive"
 
 def load_history():
     if os.path.exists(HISTORY_FILE):
@@ -452,6 +453,87 @@ def send_email(content):
         print(f"Failed to send email: {e}")
         sys.exit(1)  # 🥉 邮件发送失败时退出，让 GitHub Actions 标记为失败
 
+def generate_readme():
+    """根据 NEWS_SOURCES 动态生成 README.md"""
+    categories = {}
+    for source in NEWS_SOURCES:
+        cat = source['category']
+        if cat not in categories:
+            categories[cat] = []
+        categories[cat].append(source['name'])
+
+    source_lines = ""
+    for cat, names in categories.items():
+        source_lines += f"\n**{cat}**\n"
+        for name in names:
+            source_lines += f"- {name}\n"
+
+    archive_stats = ""
+    if os.path.isdir(ARCHIVE_DIR):
+        months = sorted([d for d in os.listdir(ARCHIVE_DIR)
+                        if os.path.isdir(os.path.join(ARCHIVE_DIR, d))])
+        total_files = 0
+        for m in months:
+            month_dir = os.path.join(ARCHIVE_DIR, m)
+            count = len([f for f in os.listdir(month_dir) if f.startswith('NEWS_') and f.endswith('.md')])
+            total_files += count
+        if months:
+            archive_stats = f"\U0001f4c2 共归档 **{total_files}** 份日报，覆盖 **{months[0]}** 至 **{months[-1]}**"
+
+    readme_content = f"""# Daily News Aggregator 每日新闻推送 \U0001f4f0
+
+![Daily News Fetch Hero](./daily-news-black.webp)
+
+一个基于 GitHub Actions 的轻量级智能新闻聚合器。不再通过简单的定时全量推送，而是采用**智能增量更新**机制，确保你收到的每一条推送都是新鲜内容。
+
+## 功能介绍
+- **智能增量**：自动记录已读历史，仅统计并推送自上次运行以来的新文章。
+- **按需推送**：如果所有频道均无更新，则自动跳过推送，绝不发送骚扰邮件。
+- **温情问候**：邮件标题根据发送时间动态生成。
+- **极简美观**：采用 Inter 字体与响应式卡片设计，提供舒适的邮件阅读体验。
+- **每日定时**：每天北京时间 10:00 自动触发检查 (若 Github 服务器负载高，则会有延迟)。
+- **多源聚合**：包含科技、财经、地缘政治等高质量源。
+- **自动存案**：生成 Markdown 报告并按月归档至 `archive/` 目录。
+- **新鲜过滤**：自动过滤超过 48 小时的旧文章，确保内容时效性。
+
+## 部署说明
+1. **新建仓库**：在 GitHub 上创建一个私有或公开仓库。
+2. **推送代码**：将本项目文件推送至该仓库。
+3. **配置 Secrets**（可选，用于邮件推送）：
+   - `SENDER_EMAIL`: 你的发件邮箱。
+   - `RECEIVER_EMAIL`: 你的收件邮箱。
+   - `SMTP_PASSWORD`: SMTP 授权码。
+
+## 已集成信源
+{source_lines}
+## 归档
+
+日报按月自动归档至 `archive/YYYY-MM/` 目录。
+
+{archive_stats}
+
+## 项目结构
+
+```
+\u251c\u2500\u2500 aggregator.py        # 核心聚合逻辑
+\u251c\u2500\u2500 holidays.py          # 节日问候配置
+\u251c\u2500\u2500 history.json         # 增量更新历史记录
+\u251c\u2500\u2500 archive/             # 按月归档的日报
+\u2502   \u251c\u2500\u2500 2025-12/
+\u2502   \u2502   \u251c\u2500\u2500 NEWS_251222.md
+\u2502   \u2502   \u2514\u2500\u2500 ...
+\u2502   \u2514\u2500\u2500 2026-01/
+\u2502       \u251c\u2500\u2500 NEWS_260101.md
+\u2502       \u2514\u2500\u2500 ...
+\u2514\u2500\u2500 .github/workflows/   # GitHub Actions 定时任务
+```
+"""
+
+    with open("README.md", "w", encoding="utf-8") as f:
+        f.write(readme_content)
+    print("README.md has been updated.")
+
+
 def main():
     history = load_history()
     news_data, new_history, has_update = fetch_news(history)
@@ -462,19 +544,22 @@ def main():
 
     md_report = generate_markdown(news_data)
     
-    # 动态生成文件名，如 NEWS_251222.md
-    date_filename = f"NEWS_{datetime.datetime.now().strftime('%y%m%d')}.md"
+    now = datetime.datetime.now()
+    month_dir = os.path.join(ARCHIVE_DIR, now.strftime('%Y-%m'))
+    os.makedirs(month_dir, exist_ok=True)
     
-    # 保存为 Markdown 文件
-    with open(date_filename, "w", encoding="utf-8") as f:
+    date_filename = f"NEWS_{now.strftime('%y%m%d')}.md"
+    filepath = os.path.join(month_dir, date_filename)
+    
+    with open(filepath, "w", encoding="utf-8") as f:
         f.write(md_report)
-    print(f"{date_filename} has been generated.")
+    print(f"{filepath} has been generated.")
 
-    # 更新历史记录文件
     save_history(new_history)
     print("History updated.")
 
-    # 发送邮件
+    generate_readme()
+
     send_email(md_report)
 
 if __name__ == "__main__":
