@@ -17,8 +17,8 @@ NEWS_SOURCES = [
     {"name": "联合早报", "url": "https://feedx.net/rss/zaobao.xml", "category": "财经/国际"},
     {"name": "Solidot", "url": "https://www.solidot.org/index.rss", "category": "技术/情报"},
     {"name": "阮一峰的网络日志", "url": "http://www.ruanyifeng.com/blog/atom.xml", "category": "技术/极客"},
-    {"name": "Hacker News", "url": "https://news.ycombinator.com/rss", "category": "技术/极客"},
     {"name": "少数派 (Minority)", "url": "https://sspai.com/feed", "category": "科技/生活"},
+    {"name": "Hacker News", "url": "https://news.ycombinator.com/rss", "category": "极客/前沿"},
 ]
 
 LIMIT_PER_SOURCE = 5
