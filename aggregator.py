@@ -2,9 +2,12 @@ import feedparser
 import datetime
 import os
 import re
+import sys
 import markdown
 import smtplib
 import json
+import time
+import calendar
 from email.mime.text import MIMEText
 from email.header import Header
 from email.utils import getaddresses
@@ -53,6 +56,20 @@ def clean_text(html_text):
     text = re.sub(r'。+', '。', text)
     return text.strip()
 
+def is_recent(entry, max_age_hours=48):
+    """检查文章是否在指定时间窗口内（默认 48 小时），过滤掉旧闻。"""
+    published = entry.get('published_parsed') or entry.get('updated_parsed')
+    if not published:
+        # 如果没有时间信息，默认保留
+        return True
+    try:
+        entry_time = calendar.timegm(published)
+        now = time.time()
+        age_hours = (now - entry_time) / 3600
+        return age_hours <= max_age_hours
+    except Exception:
+        return True
+
 def fetch_news(history):
     today_news = {}
     new_history = history.copy()
@@ -79,11 +96,21 @@ def fetch_news(history):
             if item_id in source_history:
                 continue
             
+            # 🥇 日期过滤：跳过超过 48 小时的旧闻
+            if not is_recent(entry, max_age_hours=48):
+                print(f"  Skipped (too old): {entry.title[:50]}")
+                continue
+            
             # 清理标题和摘要
             title = clean_text(entry.title)
             summary = clean_text(entry.get("summary", ""))
             if not summary and "description" in entry:
                 summary = clean_text(entry.description)
+            
+            # 🥈 Hacker News 特殊处理：过滤无意义的 "Comments" 摘要
+            if source['name'] == 'Hacker News':
+                if not summary or summary.strip().lower() in ('comments', 'comments。'):
+                    summary = ""
             
             entries.append({
                 "title": title,
@@ -423,6 +450,7 @@ def send_email(content):
         server.quit()
     except Exception as e:
         print(f"Failed to send email: {e}")
+        sys.exit(1)  # 🥉 邮件发送失败时退出，让 GitHub Actions 标记为失败
 
 def main():
     history = load_history()

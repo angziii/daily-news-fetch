@@ -6,6 +6,11 @@ on:
     - cron: '0 2 * * *'
   workflow_dispatch: # 也可以手动触发
 
+# 🥉 防止并发运行导致 history.json 冲突
+concurrency:
+  group: daily-news
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
